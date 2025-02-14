@@ -4,7 +4,7 @@ import { HumanMessage, SystemMessage } from '@langchain/core/messages';
 async function callOpenAIChatModel(prompt: string): Promise<string> {
 	const messages = [
 		new SystemMessage(
-			'You are a friendly AI called Qin, you are my personal assistant with a female persona'
+			'You are a friendly AI called Qin, you are my personal assistant to help me out with daily tasks'
 		),
 		new HumanMessage(prompt),
 	];
